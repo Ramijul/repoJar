@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+	<!--
+	Author: Ramijul Islam
+	
+	-->
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css"/> <!-- css -->
+		
+		<title>Resume Builder</title>
+	</head>
+	<body>
+	<div id="page">
+		<div id="navigation">
+			<h1>Resume Builder</h1>
+			
+			<ul id="navBar">
+				<li><a href="index.php">Contact Information</a></li>
+				<li><a href="position.php">Position Sought</a></li>
+				<li><a href="employment.php">Employment History</a></li>
+				<li><a href="resume.php">Resume</a></li>
+				<li><a href="archive.php">Resume</a></li>				
+				<li class="selected"><a href="Help.html">Help</a></li>
+			</ul>
+		</div>
+		
+		<div id="body">
+		
+			<div id="form">
+				<p>
+				I tried to avoid inline html. It makes it hard to read and maintain. Thus, I had seperate php files
+				 consisting of html code. For javascript in the Employee History page, I added some script at the bottom 
+				 of the html code. This allowed me to run the run the javascript code after the page has been completely 
+				 loaded, since most of the javascript needs to be run right when the page is loaded.</p>
+				
+				<h3>User Documentation:</h3>
+				<p>The navigation bar allows you to navigate to any page at any point in time. However, while saving data 
+				you have to make sure that you enter the data correctly as instructed. Otherwise you will get invalid input 
+				errors messages. You can also go to the Resume at any point (after saving data from atleast one page) to view 
+				the progress.
+				</p>
+				
+				<h3>Technical description:</h3>
+				<p>Since we weren't informed how to validate the phone number, I took the liberty to validate in such a way 
+				that it will accept only 10 digits long nubmers (123-123-1234). However, I did not validate to have proper
+				area codes.</p>
+				
+			</div>			
+		</div>
+	</div>
+	</body>
+</html>
